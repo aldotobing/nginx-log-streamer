@@ -1,14 +1,24 @@
 # 🌐 Nginx Log Streamer
 
-A real-time log streaming solution for Nginx access logs using WebSockets. Stream your Nginx logs directly to your browser or application with minimal setup.
+A high-performance WebSocket server for real-time Nginx log streaming. Stream access logs directly to web applications with minimal latency and resource overhead.
+
+![Nginx Log Streamer](nginx-log-streamer.jpg)
 
 ![Nginx Log Streamer Demo](https://img.shields.io/badge/status-active-success.svg)
-![Docker Build](https://img.shields.io/docker/cloud/build/yourusername/nginx-log-streamer)
+![Docker Build](https://img.shields.io/docker/cloud/build/aldotobing/nginx-log-streamer)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
+## ✨ Core Features
+
+- Real-time log streaming via WebSockets
+- Optional WSS (WebSocket Secure) support
+- Lightweight Node.js implementation
+- Containerized deployment with Docker
+- Seamless integration with [Nginx Log Analyzer Web UI](https://github.com/aldotobing/nginx-log-analyzer-web-ui)
 
 ## 🌟 Web UI Integration
 
-This project pairs perfectly with the [Nginx Log Analyzer Web UI](https://github.com/aldotobing/nginx-log-analyzer-web-ui) - a powerful, interactive dashboard for visualizing and analyzing your Nginx logs in real-time.
+This project pairs perfectly with the [Nginx Log Analyzer Web UI](https://github.com/aldotobing/nginx-log-analyzer-web-ui) - an interactive dashboard for visualizing and analyzing your Nginx logs in real-time.
 
 ### Key Features of the Web UI:
 - Real-time log visualization with interactive charts
