@@ -2,9 +2,7 @@
 
 A high-performance WebSocket server for real-time Nginx log streaming. Stream access logs directly to web applications with minimal latency and resource overhead.
 
-<div align="center">
-  <img src="nginx-log-streamer.jpg" alt="Nginx Log Streamer" width="600" />
-</div>
+<!-- ![Nginx Log Streamer](nginx-log-streamer.jpg) -->
 
 ![Nginx Log Streamer Demo](https://img.shields.io/badge/status-active-success.svg)
 ![Docker Build](https://img.shields.io/docker/cloud/build/aldotobing/nginx-log-streamer)
