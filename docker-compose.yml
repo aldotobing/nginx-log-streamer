@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  log-streamer:
+    # Build the image from the Dockerfile in the current directory
+    build: .
+    image: [your-docker-image-name]
+    # Restart the container automatically if it fails
+    restart: always
+    # Container name
+    container_name: nginx-log-streamer
+    environment:
+      - WS_PORT
+      - LOG_FILE_PATH
+      - TAIL_LINES
+      - SSL_CERT_PATH
+      - SSL_KEY_PATH
+    # Port mapping: host port -> container port
+    ports:
+      - "${WS_PORT:-1234}:${WS_PORT:-1234}"
+    volumes:
+      # Nginx logs
+      - /var/log/nginx:/var/log/nginx:ro
+      # SSL certificates (read-only)
+      - ${SSL_CERT_DIR:-/etc/letsencrypt}:/etc/letsencrypt:ro
